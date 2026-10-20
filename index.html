@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PCL2 2.14.0.0 可下载版</title>
-<meta http-equiv="refresh" content="3;url=https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">
+<meta http-equiv="refresh" content="5;url=https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -58,6 +58,8 @@
     color: #6e7681;
   }
   .hint b { color: #58a6ff; font-weight: 500; }
+  a.sub { color: #8b949e; text-decoration: none; border-bottom: 1px solid #30363d; padding-bottom: 1px; }
+  a.sub:hover { color: #58a6ff; border-bottom-color: #58a6ff; }
   .meta {
     margin-top: 26px; padding-top: 20px;
     border-top: 1px solid #21262d;
@@ -73,9 +75,10 @@
     <h1>PCL2 <span class="ver">2.14.0.0</span></h1>
     <p class="desc">移除 MC 下载功能前的最后一个官方版本<br>解压即用，免安装</p>
 
-    <a class="btn" href="https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">前往下载</a>
+    <a class="btn" href="https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/download/v2.14.0.0/PCL2-2.14.0.0.zip">直接下载（约 2.5 MB）</a>
 
-    <p class="hint">没有自动跳转？点上面的按钮 · <b id="cd">3</b> 秒后自动前往</p>
+    <p class="hint"><a class="sub" href="https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">看版本说明与校验值 →</a></p>
+    <p class="hint">没有自动跳转？点上面的按钮 · <b id="cd">5</b> 秒后打开下载页</p>
 
     <div class="meta">
       作者：龙腾猫跃　｜　原仓库：<a href="https://github.com/Meloong-Git/PCL">Meloong-Git/PCL</a><br>
@@ -83,7 +86,7 @@
     </div>
   </div>
 <script>
-  var n = 3, el = document.getElementById('cd');
+  var n = 5, el = document.getElementById('cd');
   var t = setInterval(function () {
     n--; if (el) el.textContent = n > 0 ? n : 0;
     if (n <= 0) {
