@@ -14,7 +14,7 @@ PCL2 **2.14.0.0**，官方 2026-10-19 发布的构建。
 
 ## 下载
 
-到 [Releases](../../releases/latest) 下载 `PCL2-2.14.0.0-可下载版.zip`。
+到 [Releases](https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest) 下载 `PCL2-2.14.0.0-可下载版.zip`。
 
 解压即用，免安装，删文件夹就等于卸载。
 
