@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCL2 2.14.0.0 可下载版</title>
+<meta http-equiv="refresh" content="3;url=https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background: #0d1117;
+    color: #e6edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    padding: 24px;
+  }
+  .card {
+    max-width: 460px; width: 100%;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px; letter-spacing: .5px;
+    color: #8b949e;
+    border: 1px solid #30363d;
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px; font-weight: 600;
+    margin-bottom: 10px; letter-spacing: .5px;
+  }
+  .ver { color: #58a6ff; }
+  p.desc {
+    font-size: 14px; line-height: 1.7;
+    color: #8b949e;
+    margin-bottom: 28px;
+  }
+  .btn {
+    display: block;
+    background: #238636;
+    color: #fff; text-decoration: none;
+    font-size: 16px; font-weight: 500;
+    padding: 14px 0;
+    border-radius: 8px;
+    transition: background .15s;
+  }
+  .btn:hover { background: #2ea043; }
+  .hint {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #6e7681;
+  }
+  .hint b { color: #58a6ff; font-weight: 500; }
+  .meta {
+    margin-top: 26px; padding-top: 20px;
+    border-top: 1px solid #21262d;
+    font-size: 12px; line-height: 1.9;
+    color: #6e7681;
+  }
+  .meta a { color: #58a6ff; text-decoration: none; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">非官方归档</div>
+    <h1>PCL2 <span class="ver">2.14.0.0</span></h1>
+    <p class="desc">移除 MC 下载功能前的最后一个官方版本<br>解压即用，免安装</p>
+
+    <a class="btn" href="https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest">前往下载</a>
+
+    <p class="hint">没有自动跳转？点上面的按钮 · <b id="cd">3</b> 秒后自动前往</p>
+
+    <div class="meta">
+      作者：龙腾猫跃　｜　原仓库：<a href="https://github.com/Meloong-Git/PCL">Meloong-Git/PCL</a><br>
+      本页仅为跳转入口，与官方无关
+    </div>
+  </div>
+<script>
+  var n = 3, el = document.getElementById('cd');
+  var t = setInterval(function () {
+    n--; if (el) el.textContent = n > 0 ? n : 0;
+    if (n <= 0) {
+      clearInterval(t);
+      location.href = 'https://github.com/Zzz528/pcl-2.14.0.0-archive/releases/latest';
+    }
+  }, 1000);
+</script>
+</body>
+</html>
